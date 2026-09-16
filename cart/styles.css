@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f6f7fb;
+  color: #1e293b;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+
+nav {
+  height: 70px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #172554;
+  color: white;
+}
+
+nav .brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav .nav-items {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .nav-items a {
+  font-size: 0.95rem;
+}
+
+nav .nav-items a:hover {
+  color: #bfdbfe;
+}
+
+/* CART */
+
+#addtocart {
+  width: 950px;
+  max-width: calc(100% - 40px);
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#addtocart .item {
+  display: flex;
+  align-items: center;
+  min-height: 190px;
+  background: #eaf2ff;
+  border: 1px solid #d6e2f5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#addtocart .item img {
+  width: 190px;
+  height: 190px;
+  padding: 1.25rem;
+  object-fit: contain;
+  background: white;
+}
+
+#addtocart .item .info {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+#addtocart .item .row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#addtocart .item .price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+#addtocart .item .sized {
+  padding: 0.4rem 0.7rem;
+  background: #dbeafe;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  color: #1d4ed8;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#addtocart .item .colors {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+#addtocart .item .colors .row {
+  gap: 0.5rem;
+}
+
+#addtocart .item .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+#addtocart .item .info > .row:last-child {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* ACTIONS */
+
+#addtocart .item .actions {
+  width: 120px;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity {
+  min-width: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.quantity-controls button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+  color: #172554;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background: #172554;
+  color: white;
+}
+
+#addtocart .item .actions > button {
+  width: 100px;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: #172554;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#addtocart .item .actions > button:hover {
+  background: #2563eb;
+}
+
+/* EMPTY CART */
+
+#message {
+  width: 950px;
+  max-width: calc(100% - 40px);
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 1.2rem;
+  background: #eaf2ff;
+  border: 1px solid #d6e2f5;
+  border-radius: 12px;
+}
+
+/* CHECKOUT */
+
+.checkout {
+  width: 950px;
+  max-width: calc(100% - 40px);
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #eaf2ff;
+  border: 1px solid #d6e2f5;
+  border-radius: 12px;
+}
+
+.checkout h5 {
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.c_items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  background: white;
+  border: 1px solid #d6e2f5;
+  border-radius: 6px;
+}
+
+.checkout-item .item_name {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.checkout-item .amount {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+/* TOTAL */
+
+#totalamount {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid #bfdbfe;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* CHECKOUT BUTTON */
+
+.checkout > button {
+  display: block;
+  width: 120px;
+  margin-left: auto;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #172554;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkout > button:hover {
+  background: #2563eb;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  #addtocart,
+  #message,
+  .checkout {
+    width: calc(100% - 20px);
+  }
+
+  #addtocart .item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #addtocart .item img {
+    width: 100%;
+    height: 220px;
+  }
+
+  #addtocart .item .info {
+    padding: 1rem;
+  }
+
+  #addtocart .item .actions {
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav {
+    padding: 0 1rem;
+  }
+
+  nav .nav-items {
+    gap: 1rem;
+  }
+
+  nav .nav-items a {
+    font-size: 0.85rem;
+  }
+
+  .checkout {
+    padding: 1rem;
+  }
+
+  .checkout > button {
+    width: 100%;
+  }
+}

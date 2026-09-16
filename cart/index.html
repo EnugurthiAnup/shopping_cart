@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <nav>
+    <div class="brand">
+      <a href="">MeShop.</a>
+    </div>
+    <div class="nav-items">
+      <a href="../index.html">Home</a>
+      <a href="../shop/index.html">Shop</a>
+      <a href="../profile/index.html">Profile</a>
+    </div>
+  </nav>
+  <section id="addtocart">
+  </section>
+    <div id="message"></div>
+
+    <section class="checkout">
+    <h5>Checkout items</h5>
+
+    <div class="c_items">
+    </div>
+    <div id="totalamount">
+    </div>
+
+    <button id="pay">Checkout</button>
+</section>
   </body>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./script.js"></script>
+
 </html>
